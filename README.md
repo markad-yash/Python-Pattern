@@ -62,7 +62,63 @@ Output:
 *
 ```
 
-2.
+4.
+```python
+a = 1
+for i in range(1,4):
+    for j in range(1,a+1):
+        print('*',end=' ')
+    a = a+2
+    print()
+
+```
+Output:
+```
+* 
+* * * 
+* * * * *
+```
+
+
+5.
+```python
+num=5
+for i in range(num):
+    for j in range(num-i-1):
+        print(end= ' ')
+    for j in range(i+1):
+        print('*',end=" ")
+    print()
+
+
+```
+Output:
+```
+   * 
+  * * 
+ * * *
+* * * *
+```
+
+6.
+```python
+
+```
+Output:
+```
+
+```
+
+7.
+```python
+
+```
+Output:
+```
+
+```
+
+8.
 ```python
 
 ```
@@ -72,34 +128,7 @@ Output:
 ```
 
 
-2.
-```python
-
-```
-Output:
-```
-
-```
-
-2.
-```python
-
-```
-Output:
-```
-
-```
-
-2.
-```python
-
-```
-Output:
-```
-
-```
-
-2.
+9.
 ```python
 
 ```
@@ -109,7 +138,7 @@ Output:
 ```
 
 
-2.
+10.
 ```python
 
 ```
@@ -119,7 +148,7 @@ Output:
 ```
 
 
-2.
+11.
 ```python
 
 ```
@@ -128,17 +157,7 @@ Output:
 
 ```
 
-
-2.
-```python
-
-```
-Output:
-```
-
-```
-
-2.
+12.
 ```python
 
 ```
