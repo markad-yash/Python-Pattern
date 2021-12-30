@@ -89,9 +89,14 @@ for i in range(num):
     for j in range(i+1):
         print('*',end=" ")
     print()
-
-
 ```
+or
+```python
+n = 4
+for i in range(n):
+    print(' '*(n-i-1)+' *'*(i+1))
+```
+
 Output:
 ```
    * 
@@ -109,6 +114,13 @@ for i in range(num):
     for j in range(num-i):
         print('*',end= ' ')
     print()
+```
+or
+```python
+
+n = 4
+for i in range(n):
+    print(' '*(i)+' *'*(n-i))
 ```
 Output:
 ```
@@ -158,21 +170,45 @@ Output:
 
 9.
 ```python
-
+n = 5
+for i in range(n):
+    for j in range(n):
+        if i==0 or j==0 or i == (n-1) or j ==(n-1):
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+        
 ```
 Output:
 ```
-
+* * * * * 
+*       * 
+*       *
+*       *
+* * * * *
 ```
-
 
 10.
 ```python
+n = 5
+for i in range(n-1):
+    print(' '*(n-i-1)+' *'*(i+1))
+for j in range(n):
+    print(' '*(j)+' *'*(n-j))
 
 ```
 Output:
 ```
-
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
 ```
 
 
