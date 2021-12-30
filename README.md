@@ -102,29 +102,57 @@ Output:
 
 6.
 ```python
-
+num = 4
+for i in range(num):
+    for j in range(i):
+        print(end=' ')
+    for j in range(num-i):
+        print('*',end= ' ')
+    print()
 ```
 Output:
 ```
-
+* * * * 
+ * * * 
+  * *
+   *
 ```
 
 7.
 ```python
-
+n=4
+for row in range(n):
+    for col in range(n):
+        if row==col:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
 ```
 Output:
 ```
-
+*       
+  *     
+    *
+      *
 ```
 
 8.
 ```python
-
+n = 4
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ',end=' ')
+    for j in range(1):
+        print('*',end=' ')
+    print()
 ```
 Output:
 ```
-
+      * 
+    * 
+  *
+*
 ```
 
 
