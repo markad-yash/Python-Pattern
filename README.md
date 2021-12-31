@@ -89,14 +89,9 @@ for i in range(num):
     for j in range(i+1):
         print('*',end=" ")
     print()
-```
-or
-```python
-n = 4
-for i in range(n):
-    print(' '*(n-i-1)+' *'*(i+1))
-```
 
+
+```
 Output:
 ```
    * 
@@ -114,13 +109,6 @@ for i in range(num):
     for j in range(num-i):
         print('*',end= ' ')
     print()
-```
-or
-```python
-
-n = 4
-for i in range(n):
-    print(' '*(i)+' *'*(n-i))
 ```
 Output:
 ```
@@ -169,6 +157,74 @@ Output:
 
 
 9.
+
+
+
+10.
+```python
+n= 7
+for row in range(n):
+    for col in range(n-2):
+        if (col ==0 or col==4) or ((row==0 or row == 3) and (col>0 and col<n-3)):
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+
+```
+Output:
+```
+* * * * * 
+*       * 
+*       *
+* * * * *
+*       *
+*       *
+*       *
+```
+
+
+11.
+```python
+n = 7
+for i in range(n):
+    for j in range(n-2):
+        if i == 0 or j ==0 or j ==(n-3) or i == (n//2) or i == n-1 or (j!=n-3 and i ==0):
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+```
+Output:
+```
+* * * * * 
+*       * 
+*       *
+* * * * *
+*       *
+*       *
+* * * * *
+```
+
+12.
+```python
+n = 6
+for i in range(n):
+    for j in range(n-1):
+        if i==0 or j==(n-2) or i == (n-1):
+            print('*',end=' ')
+    print()
+
+```
+Output:
+```
+* * * * * 
+* 
+*
+*
+*
+* * * * *
+```
 ```python
 n = 5
 for i in range(n):
@@ -188,31 +244,144 @@ Output:
 *       *
 * * * * *
 ```
-
-10.
+13.
 ```python
-n = 5
-for i in range(n-1):
-    print(' '*(n-i-1)+' *'*(i+1))
-for j in range(n):
-    print(' '*(j)+' *'*(n-j))
+n = 7
+for i in range(n):
+    for j in range(n-1):
+        if i==0 or i==n//2 or j ==0 or i == n-1:
+            print('*',end=' ')
+    print()
+```
+Output:
+```
+* * * * * * 
+* 
+*
+* * * * * *
+*
+*
+* * * * * *
+```
+
+13.
+```python
+n = 7
+for i in range(n):
+    for j in range(n-1):
+        if i==0 or i==n//2 or j ==0:
+            print('*',end=' ')
+    print()
+```
+Output:
+```
+* * * * * * 
+* 
+*
+* * * * * *
+*
+*
+* 
+```
+15.
+```python
+n = 9
+for i in range(n):
+    for j in range(n-1):
+        if i==0 or j ==0 or i==(n-1) or (i ==n//2 and j >2) or (j ==n-2 and i>=n//2) :
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+```
+Output:
+```
+* * * * * * * * 
+*
+*
+*
+*     * * * * *
+*             *
+*             *
+*             *
+* * * * * * * *
+```
+15.
+```python
+
+n = 7
+for i in range(n):
+    for j in range(n-1):
+        if i ==n//2 or j ==0 or j ==n-2:
+            print('*',end=' ')
+        else:
+            print(' ',end= ' ')
+    print()
 
 ```
 Output:
 ```
-     *
-    * *
-   * * *
-  * * * *
- * * * * *
-  * * * *
-   * * *
-    * *
-     *
+*         * 
+*         * 
+*         *
+* * * * * *
+*         *
+*         *
+*         *
+```
+15.
+```python
+n = 8 
+for i in range(n):
+    for j in range(n-1):
+        if i==0 or i ==n-1 or j ==(n-2)//2:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+```
+Output:
+```
+* * * * * * * 
+      *       
+      *
+      *
+      *
+      *
+      *
+* * * * * * *
+```
+15.
+```python
+n = 7
+for i in range(n):
+    for j in range(n-1):
+        if i ==0 or j ==n//2 or (j==0 and i > (n-3)) or (i==n-1 and j<=n//2) :
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+
+```
+Output:
+```
+* * * * * * 
+      *     
+      *
+      *
+      *
+*     *
+* * * *
+```
+15.
+```python
+<!--  hi-->
+```
+Output:
 ```
 
-
-11.
+```
+15.
 ```python
 
 ```
@@ -220,8 +389,23 @@ Output:
 ```
 
 ```
+15.
+```python
 
-12.
+```
+Output:
+```
+
+```
+15.
+```python
+
+```
+Output:
+```
+
+```
+15.
 ```python
 
 ```
